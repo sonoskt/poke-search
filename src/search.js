@@ -52,3 +52,4 @@ const getEvolutionChain = async (url) => {
   return data;
 }
 
+export { getPokeDex, getPokemon, getAbility, getSpecies, getEvolutionChain };

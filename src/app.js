@@ -1,4 +1,21 @@
-//Easily the hardest project i have done so far 
+//WHEN SERVING USE webpack serve instead of npm run serve
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+import { getPokeDex, getPokemon, getAbility, getSpecies, getEvolutionChain } from './search'
+import {
+  showResults,
+  hideResults,
+  changeIdentity,
+  showSprites,
+  editTable,
+  addAbility,
+  clearEvolutions,
+  clearAbilities,
+  addEvolutions,
+  validForm,
+  invalidForm,
+  clearForm
+} from './ui';
 
 //Array to store the national dex entries
 let nationalDex = [];

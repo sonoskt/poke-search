@@ -54,14 +54,29 @@ const addEvolutions = pokemon => {
 };
 
 const validForm = () => {
-  pokeForm.pokemon.setAttribute('class','form-control border-success');
+  document.querySelector('form').pokemon.setAttribute('class','form-control border-success');
 };
 
 const invalidForm = () => {
-  pokeForm.pokemon.setAttribute('class','form-control border-danger');
+  document.querySelector('form').pokemon.setAttribute('class','form-control border-danger');
 };
 
 const clearForm = () => {
-  pokeForm.pokemon.setAttribute('class','form-control');
-  pokeForm.reset();
+  document.querySelector('form').pokemon.setAttribute('class','form-control');
+  document.querySelector('form').reset();
+};
+
+export {
+  showResults,
+  hideResults,
+  changeIdentity,
+  showSprites,
+  editTable,
+  addAbility,
+  clearEvolutions,
+  clearAbilities,
+  addEvolutions,
+  validForm,
+  invalidForm,
+  clearForm
 };
